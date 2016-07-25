@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.inducesmile.eatwhat.Homepage"
+    android:focusable="false"
+    style="@style/home_body">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_homepage"
+                        android:src="@drawable/start_butm"
+                        android:layout_marginTop="140dp"
+                        android:background="#00000000"
+                        android:layout_marginBottom="60dp">
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#000000"
+            android:weightSum="1"
+            android:id="@+id/linearLayout5"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMap"
+                android:src="@drawable/map_icon"
+                android:background="#000000"
+                android:layout_alignParentBottom="true" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibEat"
+                android:src="@drawable/food"
+                android:background="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/linearLayout5" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSetting"
+                android:src="@drawable/set_icon"
+                android:background="#000000"
+                android:clickable="false"
+                android:layout_alignTop="@+id/linearLayout5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
