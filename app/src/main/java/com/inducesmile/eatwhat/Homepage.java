@@ -13,11 +13,19 @@ public class Homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        anImagebutton = (ImageButton) findViewById(R.id.ibEat);
+        anImagebutton = (ImageButton) findViewById(R.id.start);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Homepage.this, Mood.class));
+            }
+        });
+
+        anImagebutton = (ImageButton) findViewById(R.id.ibEat);
+        anImagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Homepage.this, Homepage.class));
             }
         });
     }
