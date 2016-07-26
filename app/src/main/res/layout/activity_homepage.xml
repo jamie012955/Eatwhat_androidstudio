@@ -22,7 +22,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/linearLayout_homepage"
+                        android:id="@+id/start"
                         android:src="@drawable/start_butm"
                         android:layout_marginTop="140dp"
                         android:background="#00000000"
@@ -48,7 +48,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/ibMap"
                 android:src="@drawable/map_icon"
-                android:background="#000000"/>
+                android:background="#000000"
+                android:layout_alignParentBottom="true" />
 
             <ImageButton
                 style="@style/icon"

@@ -4,40 +4,17 @@
     tools:context="com.inducesmile.eatwhat.Login"
     style="@style/login_body">
 
-
-    <!--<ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/login_littlebg"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/login_littlebg"
-        android:layout_alignParentEnd="true" />-->
-
     <EditText
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/tfaccount"
         android:layout_gravity="center"
         android:layout_marginTop="180dp"
         android:password="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="帳號"
-        android:id="@+id/textView3"
-        android:layout_marginTop="-30dp"
-        android:layout_marginLeft="-100dp"
-        android:layout_gravity="center"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:hint="帳號"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <EditText
         android:layout_width="250dp"
@@ -46,25 +23,10 @@
         android:ems="10"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/tfpass"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="密碼"
-        android:id="@+id/textView2"
-        android:layout_marginTop="-30dp"
-        android:layout_marginLeft="-100dp"
-        android:layout_gravity="center"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
-        android:layout_alignEnd="@+id/textView3" />
-
-
+        android:hint="密碼"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -73,9 +35,6 @@
         android:layout_marginBottom="94dp"
         android:src="@drawable/login_button"
         android:layout_marginTop="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:background="#ffffff" />
-
 </LinearLayout>
