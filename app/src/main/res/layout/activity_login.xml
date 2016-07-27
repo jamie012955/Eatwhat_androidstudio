@@ -9,7 +9,7 @@
         android:layout_height="40dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/tfaccount"
+        android:id="@+id/editText"
         android:layout_gravity="center"
         android:layout_marginTop="180dp"
         android:password="false"
@@ -22,9 +22,8 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tfpass"
-
+        android:layout_marginTop="10dp"
+        android:id="@+id/tfaccount"
         android:hint="密碼"
         android:textAppearance="?android:attr/textAppearanceSmall"/>
 

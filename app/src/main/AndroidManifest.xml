@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.inducesmile.eatwhat" >
 
@@ -19,11 +20,13 @@
         </activity>
         <activity android:name=".Homepage" >
         </activity>
-        <activity android:name=".Mood" >
+        <activity android:name=".Mood">
         </activity>
         <activity android:name=".Budget" >
         </activity>
         <activity android:name=".Selector" >
+        </activity>
+        <activity android:name=".Registered_login" >
         </activity>
     </application>
 

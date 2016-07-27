@@ -1,84 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.inducesmile.eatwhat.Mood">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inducesmile.eatwhat.Mood"
+    style="@style/mood_body">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="心情選擇"
-        android:id="@+id/textView8"
-        android:layout_alignParentTop="true"
-        android:background="#F1AC23"
-        android:gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="我現在的心情是"
-        android:id="@+id/textView9"
-        android:layout_below="@+id/textView8"
-        android:background="#F8F6F1"
-        android:gravity="center_horizontal" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ibNext"
-        android:src="@drawable/start_bow"
-        android:background="#00000000"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="103dp"
-        android:longClickable="false" />
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <include layout="@layout/toolbar"
+        android:id="@+id/my_toolbar"/>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:background="#000000"
-        android:weightSum="1"
-        android:id="@+id/linearLayout2"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
-
-        <ImageButton
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageButton27"
-            android:src="@drawable/map_icon"
-            android:background="#040404"
-            android:layout_alignParentBottom="true"
-            android:layout_weight="0.04"
-            android:paddingRight="110dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/imageButton28"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection1"
+                            android:src="@drawable/mood01_ohya"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection2"
+                            android:src="@drawable/mood02_bs"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection3"
+                            android:src="@drawable/mood03_uhm"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection4"
+                            android:src="@drawable/mood04_hihi"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection5"
+                            android:src="@drawable/mood05_sotired"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection6"
+                            android:src="@drawable/mood06_gofightwin"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection7"
+                            android:src="@drawable/mood07_sad"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/moodicon">
+                        <ImageButton
+                            style="@style/moodiconpic"
+                            android:id="@+id/ibmoodselection8"
+                            android:src="@drawable/mood08_relax"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ibNext"
+                        android:src="@drawable/next_bow"
+                        android:background="#00000000"
+                        android:longClickable="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+        <LinearLayout
             android:background="#000000"
-            android:layout_alignBottom="@+id/ibstart"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/food"
-            android:layout_weight="0.06"
-            android:paddingRight="110dp" />
+            android:weightSum="1"
+            android:id="@+id/linearLayout5"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMap"
+                android:src="@drawable/map_icon"
+                android:background="#000000"
+                android:layout_alignParentBottom="true" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/imageButton29"
-            android:src="@drawable/set_icon"
-            android:background="#020202"
-            android:layout_above="@+id/linearLayout"
-            android:layout_centerHorizontal="true"
-            android:clickable="false"
-            android:layout_weight="0.07" />
-    </LinearLayout>
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibEat"
+                android:src="@drawable/food"
+                android:background="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/linearLayout5" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSetting"
+                android:src="@drawable/set_icon"
+                android:background="#000000"
+                android:clickable="false"
+                android:layout_alignTop="@+id/linearLayout5" />
+        </LinearLayout>
+    </RelativeLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

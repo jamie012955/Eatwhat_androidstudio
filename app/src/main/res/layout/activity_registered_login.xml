@@ -8,38 +8,37 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:inputType="textPersonName"
-        android:hint="Name"
+        android:hint="帳號"
         android:textSize="14sp"
         android:textColor="@color/gray"
         android:ems="10"
         android:id="@+id/taccount"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-10dp" />
+        android:layout_marginTop="-60dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:ems="10"
+        android:hint="密碼"
         android:id="@+id/tpass"
-        android:layout_below="@+id/taccount"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
     <EditText
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:inputType="textEmailAddress"
         android:ems="10"
+        android:hint="信箱"
         android:layout_marginTop="5dp"
-        android:id="@+id/temail" />
+        android:id="@+id/temail"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ibRegisterlogin"
         android:layout_marginTop="10dp"
         android:src="@drawable/registered_and_login_button"
-        android:layout_below="@+id/temail"
-        android:layout_centerHorizontal="true"
         android:background="#ffffff" />
 
 
