@@ -27,5 +27,13 @@ public class Mood extends AppCompatActivity {
                 startActivity(new Intent(Mood.this, Budget.class));
             }
         });
+
+        anImagebutton = (ImageButton) findViewById(R.id.ibEat);
+        anImagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Mood.this, Homepage.class));
+            }
+        });
     }
 }

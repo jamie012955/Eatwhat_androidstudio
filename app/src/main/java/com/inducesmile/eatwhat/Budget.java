@@ -35,5 +35,12 @@ public class Budget extends AppCompatActivity {
                 startActivity(new Intent(Budget.this, Mood.class));
             }
         });
+        anImagebutton = (ImageButton) findViewById(R.id.ibEat);
+        anImagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Budget.this, Homepage.class));
+            }
+        });
     }
 }
