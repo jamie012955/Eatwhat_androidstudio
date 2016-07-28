@@ -3,77 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.inducesmile.eatwhat.Selector"
     style="@style/selector_body">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/my_toolbar"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <ImageView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fu_backg"
-                android:id="@+id/fu_bg" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:foregroundGravity="center"
-                android:background="@drawable/fu_box"
-                android:src="@drawable/fu_box"
-                android:id="@+id/wheel"
-                android:layout_marginLeft="-220dp"
-                android:layout_marginTop="156dp"
-                android:layout_below="@+id/imageView5"
-                android:layout_centerHorizontal="true" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/pillar"
-                android:src="@drawable/fu_pillar"
-                android:layout_marginLeft="-130dp"
-                android:layout_marginTop="246dp"
-                android:layout_above="@+id/linearLayout8"
-                android:layout_centerHorizontal="true" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:src="@drawable/fu_handle"
-                android:background="#00000000"
-                android:visibility="visible"
-                android:layout_marginTop="255dp"
-                android:layout_marginLeft="-41dp" />
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fu_backg"
+                    android:id="@+id/fu_bg"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:background="@drawable/fu_box"
+                    android:src="@drawable/fu_box"
+                    android:id="@+id/wheel"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/imageView5" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pillar"
+                    android:src="@drawable/fu_pillar"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_above="@+id/linearLayout8"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/fu_handle"
+                    android:background="#00000000"
+                    android:visibility="visible"
+                    android:layout_marginTop="255dp"
+                    android:layout_marginLeft="-41dp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="開抽"
-                android:id="@+id/rotate"
-                android:onClick="OnRotateButtonClick"
-                android:layout_above="@+id/linearLayout8"
-                android:layout_marginLeft="-26dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="開抽"
+                    android:id="@+id/rotate"
+                    android:onClick="OnRotateButtonClick"
+                    android:layout_above="@+id/linearLayout8"
+                    android:layout_marginLeft="-26dp" />
 
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="80dp"
-            android:layout_marginLeft="10dp">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/back"
-                android:background="#00000000"
-                android:src="@drawable/changemoney_bow" />
-        </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back"
+                        android:background="#00000000"
+                        android:src="@drawable/changemoney_bow" />
+                </LinearLayout>
+            </LinearLayout>
 
 
+        </ScrollView>
 
         <LinearLayout
             android:background="#000000"
@@ -114,6 +122,7 @@
                 android:clickable="false"
                 android:layout_alignTop="@+id/linearLayout5" />
         </LinearLayout>
+
     </RelativeLayout>
 </LinearLayout>
 

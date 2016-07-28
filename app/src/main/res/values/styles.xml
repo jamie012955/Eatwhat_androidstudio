@@ -47,11 +47,14 @@
     <style name="budget_body">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
     </style>
     <style name="selector_body">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
     </style>
     <style name="moodicon">
         <item name="android:layout_weight">1</item>

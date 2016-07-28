@@ -16,8 +16,7 @@ public class Mood extends AppCompatActivity {
 
         Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
-
-        getSupportActionBar().setTitle(R.string.my_tb_title);
+        getSupportActionBar().setTitle(R.string.my_tb_mood_title);
        /* getSupportActionBar().setSubtitle(R.string.my_tb_subtitle);*/
         getSupportActionBar().setIcon(R.drawable.ictoolbar);
 

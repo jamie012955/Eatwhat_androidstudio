@@ -2,6 +2,8 @@
     <string name="app_name">eatwhat</string>
     <string name="title_activity_maps">Map</string>
     <string name="underline"><u>註冊</u></string>
-    <string name="my_tb_title">心情選擇</string>
+    <string name="my_tb_mood_title">心情選擇</string>
+    <string name="my_tb_budget_title">預算選擇</string>
+    <string name="my_tb_selector_title">抽選時刻</string>
     <string name="my_tb_subtitle">This is subtitle</string>
 </resources>
