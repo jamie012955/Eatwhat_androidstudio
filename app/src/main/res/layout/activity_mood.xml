@@ -37,6 +37,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
                 android:background="@drawable/shape"
                 android:orientation="vertical">
                 <LinearLayout
@@ -106,6 +107,9 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="-160dp"/>
                     </LinearLayout>
+=======
+                android:background="@drawable/shape">
+>>>>>>> origin/master
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

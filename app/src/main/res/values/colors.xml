@@ -8,8 +8,11 @@
     <color name="org">#F4A819</color>
     <color name="ricewhite">#F8F6F1</color>
     <color name="text_yellow">#BA8506</color>
+<<<<<<< HEAD
     <color name="black">#000000</color>
     <color name="orange">#e28306</color>
     <color name="green">@android:color/holo_green_light</color>
+=======
+>>>>>>> origin/master
 </resources>
 

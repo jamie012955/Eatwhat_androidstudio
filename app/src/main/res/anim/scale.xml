@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <scale
         android:fromXScale="0.0"
         android:fromYScale="0.0"
@@ -8,4 +9,13 @@
         android:toXScale="0%"
         android:toYScale="0%"
         android:duration="7000"/>
+=======
+    <rotate
+        android:fromDegrees="1080"
+        android:toDegrees="0"
+        android:pivotX="12%"
+        android:pivotY="12%"
+        android:duration="4000">
+    </rotate>
+>>>>>>> origin/master
 </set>
