@@ -28,5 +28,12 @@ public class Homepage extends AppCompatActivity {
                 startActivity(new Intent(Homepage.this, Homepage.class));
             }
         });
+        anImagebutton = (ImageButton) findViewById(R.id.ibSetting);
+        anImagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Homepage.this, Setting.class));
+            }
+        });
     }
 }

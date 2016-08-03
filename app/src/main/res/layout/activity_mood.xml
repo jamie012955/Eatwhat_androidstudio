@@ -6,27 +6,114 @@
 
     <include layout="@layout/toolbar"
         android:id="@+id/my_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ricewhite">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:text="我現在的心情是..."
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="22sp"
+            android:textColor="@color/text_yellow" />
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection1_big"
+                        android:src="@drawable/mood01_ohya"
+                        android:layout_gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection2_big"
+                        android:src="@drawable/mood02_bs"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-161dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection3_big"
+                        android:src="@drawable/mood03_uhm"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-162dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection4_big"
+                        android:src="@drawable/mood04_hihi"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection5_big"
+                        android:src="@drawable/mood05_sotired"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection6_big"
+                        android:src="@drawable/mood06_gofightwin"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection7_big"
+                        android:src="@drawable/mood07_sad"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection8_big"
+                        android:src="@drawable/mood08_relax"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/ib_mood_selection0_big"
+                        android:src="@drawable/mood00"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-160dp"/>
+                    </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="190dp"
+                android:layout_height="180dp"
                 android:orientation="vertical"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
@@ -36,28 +123,32 @@
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection1"
-                            android:src="@drawable/mood01_ohya"/>
+                            android:src="@drawable/mood01_ohya"
+                            android:onClick="OnMaButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection2"
-                            android:src="@drawable/mood02_bs"/>
+                            android:src="@drawable/mood02_bs"
+                            android:onClick="OnMbButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection3"
-                            android:src="@drawable/mood03_uhm"/>
+                            android:src="@drawable/mood03_uhm"
+                            android:onClick="OnMcButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection4"
-                            android:src="@drawable/mood04_hihi"/>
+                            android:src="@drawable/mood04_hihi"
+                            android:onClick="OnAlphaButtonClick"/>
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
@@ -69,28 +160,32 @@
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection5"
-                            android:src="@drawable/mood05_sotired"/>
+                            android:src="@drawable/mood05_sotired"
+                            android:onClick="OnAlphaButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection6"
-                            android:src="@drawable/mood06_gofightwin"/>
+                            android:src="@drawable/mood06_gofightwin"
+                            android:onClick="OnAlphaButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection7"
-                            android:src="@drawable/mood07_sad"/>
+                            android:src="@drawable/mood07_sad"
+                            android:onClick="OnAlphaButtonClick"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/moodicon">
                         <ImageButton
                             style="@style/moodiconpic"
                             android:id="@+id/ibmoodselection8"
-                            android:src="@drawable/mood08_relax"/>
+                            android:src="@drawable/mood08_relax"
+                            android:onClick="OnAlphaButtonClick"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -109,7 +204,7 @@
                         android:longClickable="true"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="15dp"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="10dp"/>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

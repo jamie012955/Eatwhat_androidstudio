@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inducesmile.eatwhat.Setting_member"
+    style="@style/setting_member_body">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/my_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                style="@style/setting_member_con_title"
+                android:text="舊密碼" />
+            <EditText
+                style="@style/setting_member_con_pwd"
+                android:ems="10"
+                android:id="@+id/setting_change_pwd_old"
+                android:hint="請輸入舊密碼"
+                android:inputType="text"/>
+            <TextView
+                style="@style/setting_member_con_title"
+                android:text="新密碼" />
+            <EditText
+                style="@style/setting_member_con_pwd"
+                android:ems="10"
+                android:id="@+id/setting_change_pwd_new"
+                android:hint="請輸入新密碼"
+                android:inputType="text"/>
+            <TextView
+                style="@style/setting_member_con_title"
+                android:text="請再輸入一次新密碼" />
+            <EditText
+                style="@style/setting_member_con_pwd"
+                android:ems="10"
+                android:id="@+id/setting_change_pwd_new_new"
+                android:hint="請再輸入一次新密碼"
+                android:inputType="text"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginRight="155dp"
+                android:layout_marginTop="50dp"
+                android:text="儲存更改"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/setting_member_pwd_save"
+                android:id="@+id/setting_member_save"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#000000"
+            android:weightSum="1"
+            android:id="@+id/linearLayout5"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMap"
+                android:src="@drawable/map_icon"
+                android:background="#000000"
+                android:layout_alignParentBottom="true" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibEat"
+                android:src="@drawable/food"
+                android:background="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/linearLayout5" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSetting"
+                android:src="@drawable/set_icon"
+                android:background="#000000"
+                android:clickable="false"
+                android:layout_alignTop="@+id/linearLayout5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

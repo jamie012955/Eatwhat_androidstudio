@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inducesmile.eatwhat.Setting"
+    style="@style/set_body">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/my_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="550dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/setting_title"
+                        android:text="@string/setting_member_title"
+                        android:textColor="@color/text_yellow"
+                        android:textSize="18sp" />
+                        <Button
+                            android:text="更改密碼"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/shape_setting_dashed"
+                            android:id="@+id/setting_change_pwd"
+                            android:onClick="go_change_pwd" />
+                        <!--<Button
+                            android:text="更改信箱"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/shape_setting_dashed"
+                            android:id="@+id/setting_change_mail" />-->
+                        <Button
+                            android:text="登出"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/shape_setting_dashed"
+                            android:id="@+id/setting_logout" />
+                    <TextView
+                        style="@style/setting_title"
+                        android:text="@string/setting_prefer_title"
+                        android:textColor="@color/text_yellow"
+                        android:textSize="18sp"/>
+                        <Switch
+                            style="@style/setting_buttom"
+                            android:text="不吃海鮮"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:checked="false"
+                            android:id="@+id/setting_prefer_seafood" />
+                        <Switch
+                            style="@style/setting_buttom"
+                            android:text="不吃牛肉"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:checked="false"
+                            android:id="@+id/setting_prefer_meat" />
+                        <Switch
+                            style="@style/setting_buttom"
+                            android:text="不吃辣"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:checked="false"
+                            android:id="@+id/setting_prefer_hot" />
+                            <!--android:thumb="@drawable/switch_thumb"
+                                                        android:track="@drawable/switch_track"-->
+                    <TextView
+                        style="@style/setting_title"
+                        android:text="@string/setting_other_title"
+                        android:textColor="@color/text_yellow"
+                        android:textSize="18sp"/>
+                        <Button
+                            android:text="清除吃貨地圖的所有歷史紀錄"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/shape_setting_dashed"
+                            android:id="@+id/setting_delete" />
+                        <Button
+                            android:text="距離"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/shape_setting_dashed"
+                            android:id="@+id/setting_distance" />
+                        <Switch
+                            style="@style/setting_buttom"
+                            android:text="朋友模式"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:checked="false"
+                            android:id="@+id/setting_friend" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#000000"
+            android:weightSum="1"
+            android:id="@+id/linearLayout5"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMap"
+                android:src="@drawable/map_icon"
+                android:background="#000000"
+                android:layout_alignParentBottom="true" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibEat"
+                android:src="@drawable/food"
+                android:background="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/linearLayout5" />
+
+            <ImageButton
+                style="@style/icon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSetting"
+                android:src="@drawable/set_icon"
+                android:background="#000000"
+                android:clickable="false"
+                android:layout_alignTop="@+id/linearLayout5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
