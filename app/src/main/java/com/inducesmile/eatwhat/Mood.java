@@ -52,10 +52,6 @@ public class Mood extends AppCompatActivity {
                 startActivity(new Intent(Mood.this, Budget.class));
             }
         });
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
         anImagebutton = (ImageButton) findViewById(R.id.ibEat);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +59,6 @@ public class Mood extends AppCompatActivity {
                 startActivity(new Intent(Mood.this, Homepage.class));
             }
         });
-<<<<<<< HEAD
         anImagebutton = (ImageButton) findViewById(R.id.ibSetting);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +122,5 @@ public class Mood extends AppCompatActivity {
         ib_mood_selection7_big.startAnimation(anim);
         ib_mood_selection8_big.startAnimation(anim);
 
-=======
->>>>>>> origin/master
     }
 }

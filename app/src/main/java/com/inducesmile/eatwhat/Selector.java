@@ -37,7 +37,6 @@ public class Selector extends AppCompatActivity {
                 startActivity(new Intent(Selector.this, Homepage.class));
             }
         });
-<<<<<<< HEAD
         anImagebutton = (ImageButton) findViewById(R.id.ibSetting);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,8 +44,6 @@ public class Selector extends AppCompatActivity {
                 startActivity(new Intent(Selector.this, Setting.class));
             }
         });
-=======
->>>>>>> origin/master
         anImagebutton = (ImageButton) findViewById(R.id.back);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override

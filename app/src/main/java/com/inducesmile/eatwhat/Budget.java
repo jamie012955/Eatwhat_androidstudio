@@ -42,7 +42,6 @@ public class Budget extends AppCompatActivity {
                 startActivity(new Intent(Budget.this, Homepage.class));
             }
         });
-<<<<<<< HEAD
         anImagebutton = (ImageButton) findViewById(R.id.ibSetting);
         anImagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +49,5 @@ public class Budget extends AppCompatActivity {
                 startActivity(new Intent(Budget.this, Setting.class));
             }
         });
-=======
->>>>>>> origin/master
     }
 }
